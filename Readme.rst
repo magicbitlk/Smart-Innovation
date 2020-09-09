@@ -395,41 +395,50 @@ LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applic
 
 
 
-=============
-IoT Protocols
-=============
+=================================================
+Internet of Things Solution design considerations
 
+=================================================
 
-A protocol is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed. You can think of a protocol as a spoken language.
+Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
 
-*************************************************
+*********************
+.
+Sensors and Devices
+*********************
 
-Message Queue Telemetry Transport Protocol (MQTT)
-*************************************************
-
-MQTT (Message Queue Telemetry Transport) is a messaging protocol developed with the aid of Andy Stanford-Clark of IBM and Arlen Nipper of Arcom in 1999 and is designed for M2M communication. It’s normally used for faraway tracking in IoT. Its primary challenge is to gather statistics from many gadgets and delivery of its infrastructure. MQTT connects gadgets and networks with packages and middleware. All the devices hook up with facts concentrator servers like IBM’s new message sight appliance. MQTT protocols paintings on top of TCP to offer easy and dependable streams of information.
+Devices and sensors are the “thing” part of your IoT projects. These and other devices interact with the physical environment. It is not only important that they accurately read the phenomenon your application needs (air temperature, power consumption, water flow, traffic density, etc.), but also, they have to be integrated with the overall system architecture too. When selecting the devices, you must check that they support the necessary networking protocols and that your system platform can decode the message formats they send.
+Device configuration is another important feature. Some devices provide configuration programs while others require internal reprogramming to change their behaviour. Finally, you must evaluate the power source the use (batteries, solar panels, AC, etc.) since it has a strong impact in the system maintenance.
  
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/28.jpg
 
-These IoT protocols include 3 foremost additives: subscriber, publisher, and dealer. The writer generates the information and transmits the facts to subscribers through the dealer. The dealer guarantees safety by means of move-checking the authorization of publishers and subscribers. 
+**************
+Communications
+**************
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/29.png
+Although the “i” in IoT stands for internet, you have different kinds of networks available for communications among devices and with the platform. Choosing the right networking technology depends on the characteristics and requirements of the project. It is common to use more than one technology in an IoT project. The main factors to take into account when choosing a networking technology for your IoT projects are:
+
+Devices spread:
+===============
+ If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
  
-****
-HTTP
-****
+ 
+ 
+Required data rates:
+====================
 
-The good old HTTP is still commonly used even in IoT, especially on low cost micro controllers. It has many benefits like its text based (debug and message crafting is easy), many libraries and the most importantly it goes through firewalls. Its biggest disadvantage is that it’s not full duplex.  Server can’t talk to the devices (Polling is used to overcome this).
+ Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
 
-***************************************
-Constrained Application Protocol (CoAP)
-***************************************
+Network coverage: 
+=================
+You can deploy your own network for the LoRa project including the use of third-party LoRa networks (TTN) or use an available network provided by third parties (2G, NB-IoT, etc.).
 
-CoAP is an internet utility protocol for constrained gadgets. It is designed to enable simple, constrained devices to join IoT through constrained networks having low bandwidth availability. This protocol is primarily used for machine-to-machine (M2M) communication and is particularly designed for IoT systems that are based on HTTP protocols.
+********
+Platform
+********
 
+The software platform of your IoT projects will be in charge of managing the devices (onboarding process, monitoring, etc.) and receiving and processing the messages. It also must provide APIs for reading the gathered data. Your IoT software platform must be flexible enough to support different communication protocols (MQTT, REST, XMPP, WebSockets, etc.). 
 
-
-
+Platforms are usually deployed in the cloud, but you should check if they can be deployed on-premises in case the project is big enough and investing in computing hardware is an option. In addition to basic functionalities, some platforms provide other interesting features like data mining, multitenancy and deriving data.
 
 
 
