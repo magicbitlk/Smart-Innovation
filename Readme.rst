@@ -129,7 +129,7 @@ Cloud
 
 Cloud is the application and presentation layer of the IoT architecture. The servers and computes processing the data are referred to as the cloud platform here. IoT data storing, processing and presentation part happens here. For example a dashboard is a web based representation of a data set collected through many or single IoT node. Below is a screenshot of an implementation of a dashboard done with ThingsBoard platform.
 
- .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/11.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/11.jpg
 
 ========
 Security
@@ -141,7 +141,7 @@ The security measures have to be implemented in each of the layers of IoT starti
  
 IoT Security Foundation was launched in 2015 to ensure the future of the security aspects of IoT. The rapid growth of IoT will demand for better secured platforms and channels for security of data as well.
 
- .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/12.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/12.jpg
 
 	
 ============================
@@ -189,4 +189,74 @@ Dashboards are the representation of processed data. The visualization of the da
 This could be a online dash board or hosted in a single location. However most IoT related dashboards are accessible over the internet with multiple devices such as computers, Tabs or mobiles.
 Below is a sample picture of a weather station dashboard.
 
- .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/13.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/13.jpg
+
+********************************************************
+Popular Cloud Platforms 
+********************************************************
+
+There are many popular Iot platforms in use as of now. Below are some of the most popular cloud platforms related to IoT.
+
+Azure IoT
+=========
+
+Azure IoT is the tech giant Microsoft’s IoT platform. This has predefined App templates tailored for end user business needs. They have some prebuilt applications for different business verticals. Azure also claims to be a scalable, reliable and trusted IoT cloud used by many multinational corporations. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/14.jpg
+ 
+AWS IoT
+=======
+
+Being one of the leading cloud service providers AWS IoT platform with more added features such as security, multiple supported other services and superior AI integration. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/15.jpg
+ 
+ThingsBoard
+===========
+
+ThingsBoard is an open source IoT platform which supports both cloud and on-premise deployments. The platform has some powerful features of data collection, processing, visualization and device management. This platforms enable connectivity through standard protocols such as HTTP, MQTT and CoAP.
+  
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/16.jpg
+
+Google Cloud IoT
+================
+
+Google Cloud IoT is the IoT cloud version from google which is supports the IoT architecture as below.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/17.jpg
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/18.jpg 
+
+
+
+======
+Device
+======
+
+************
+Introduction
+************
+
+Sensors/Edge computing devices
+==============================
+
+IoT devices are the end nodes of a the network. These are sometimes referred to as constrained devices since mostly these are sensors or actuators. They are connected through the network to enable M2M communication in IoT. The communication methods of Bluetooth, wifi and ZigBee are come of the common communication technologies used by these end nodes. Some of these nodes are collectively act as a mesh network forming large IoT networks as well. 
+The end hardware devices are categorized further as below according their data handling capability. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/19.jpg 
+
+As most of the devices have computational power at the node itself IoT devices enable edge computing as well where a certain level of processing can happen. For example the temperature can be monitored at a location and an alarm can be generated to a cloud application only when a specific limit is exceeded.
+The devices of an IoT network can be either a sensor or can actuator or edge computing devices together with the sensors.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/20.jpg 
+ 
+Single Board  Computers
+=======================
+
+Single board computers are small and low end computers with low end processing power. These computers comes in small physical size and comparatively inexpensive. Sometimes these are referred to as micro computers or computer on a stick. These computers have the microprocessor, input/outputs, memory and other basic characteristics of a normal computer. Micro computers also used as popular IoT devices since they have the capabilities of IoT devices. One of the popular single board computers is Rasberry Pi.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/21.jpg 
+
+
+
+
