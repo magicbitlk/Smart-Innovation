@@ -395,15 +395,46 @@ LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applic
 
 
 
+=============
+IoT Protocols
+=============
+
+
+A protocol is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed. You can think of a protocol as a spoken language.
+
+*************************************************
+Message Queue Telemetry Transport Protocol (MQTT)
+*************************************************
+
+MQTT (Message Queue Telemetry Transport) is a messaging protocol developed with the aid of Andy Stanford-Clark of IBM and Arlen Nipper of Arcom in 1999 and is designed for M2M communication. It’s normally used for faraway tracking in IoT. Its primary challenge is to gather statistics from many gadgets and delivery of its infrastructure. MQTT connects gadgets and networks with packages and middleware. All the devices hook up with facts concentrator servers like IBM’s new message sight appliance. MQTT protocols paintings on top of TCP to offer easy and dependable streams of information.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/28.jpg
+
+These IoT protocols include 3 foremost additives: subscriber, publisher, and dealer. The writer generates the information and transmits the facts to subscribers through the dealer. The dealer guarantees safety by means of move-checking the authorization of publishers and subscribers. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/29.png
+ 
+****
+HTTP
+****
+
+The good old HTTP is still commonly used even in IoT, especially on low cost micro controllers. It has many benefits like its text based (debug and message crafting is easy), many libraries and the most importantly it goes through firewalls. Its biggest disadvantage is that it’s not full duplex.  Server can’t talk to the devices (Polling is used to overcome this).
+
+***************************************
+Constrained Application Protocol (CoAP)
+***************************************
+
+CoAP is an internet utility protocol for constrained gadgets. It is designed to enable simple, constrained devices to join IoT through constrained networks having low bandwidth availability. This protocol is primarily used for machine-to-machine (M2M) communication and is particularly designed for IoT systems that are based on HTTP protocols.
+
+
+
 =================================================
 Internet of Things Solution design considerations
-
 =================================================
 
 Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
 
 *********************
-.
 Sensors and Devices
 *********************
 
@@ -430,6 +461,7 @@ Required data rates:
 
 Network coverage: 
 =================
+
 You can deploy your own network for the LoRa project including the use of third-party LoRa networks (TTN) or use an available network provided by third parties (2G, NB-IoT, etc.).
 
 ********
