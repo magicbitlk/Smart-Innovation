@@ -394,37 +394,114 @@ LoRaWAN
 LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applications. The LoRaWAN design to provide low-power WANs with features specifically needed to support low-cost mobile secure communication in IoT, smart city, and industrial applications. Specifically meets requirements for low-power consumption and supports large networks with millions and millions of devices, data rates range from 0.3 kbps to 50 kbps.
 
 
-=============
-IoT Protocols
-=============
 
 
-A protocol is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed. You can think of a protocol as a spoken language.
+=================================================
+Internet of Things Solution design considerations
 
-*************************************************
+=================================================
 
-Message Queue Telemetry Transport Protocol (MQTT)
-*************************************************
+Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
 
-MQTT (Message Queue Telemetry Transport) is a messaging protocol developed with the aid of Andy Stanford-Clark of IBM and Arlen Nipper of Arcom in 1999 and is designed for M2M communication. It’s normally used for faraway tracking in IoT. Its primary challenge is to gather statistics from many gadgets and delivery of its infrastructure. MQTT connects gadgets and networks with packages and middleware. All the devices hook up with facts concentrator servers like IBM’s new message sight appliance. MQTT protocols paintings on top of TCP to offer easy and dependable streams of information.
+*********************
+.
+Sensors and Devices
+*********************
+
+Devices and sensors are the “thing” part of your IoT projects. These and other devices interact with the physical environment. It is not only important that they accurately read the phenomenon your application needs (air temperature, power consumption, water flow, traffic density, etc.), but also, they have to be integrated with the overall system architecture too. When selecting the devices, you must check that they support the necessary networking protocols and that your system platform can decode the message formats they send.
+Device configuration is another important feature. Some devices provide configuration programs while others require internal reprogramming to change their behaviour. Finally, you must evaluate the power source the use (batteries, solar panels, AC, etc.) since it has a strong impact in the system maintenance.
  
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/28.jpg
 
-These IoT protocols include 3 foremost additives: subscriber, publisher, and dealer. The writer generates the information and transmits the facts to subscribers through the dealer. The dealer guarantees safety by means of move-checking the authorization of publishers and subscribers. 
+**************
+Communications
+**************
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/29.png
+Although the “i” in IoT stands for internet, you have different kinds of networks available for communications among devices and with the platform. Choosing the right networking technology depends on the characteristics and requirements of the project. It is common to use more than one technology in an IoT project. The main factors to take into account when choosing a networking technology for your IoT projects are:
+
+Devices spread:
+===============
+ If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
  
-****
-HTTP
-****
+ 
+ 
+Required data rates:
+====================
 
-The good old HTTP is still commonly used even in IoT, especially on low cost micro controllers. It has many benefits like its text based (debug and message crafting is easy), many libraries and the most importantly it goes through firewalls. Its biggest disadvantage is that it’s not full duplex.  Server can’t talk to the devices (Polling is used to overcome this).
+ Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
 
-***************************************
-Constrained Application Protocol (CoAP)
-***************************************
+Network coverage: 
+=================
+You can deploy your own network for the LoRa project including the use of third-party LoRa networks (TTN) or use an available network provided by third parties (2G, NB-IoT, etc.).
 
-CoAP is an internet utility protocol for constrained gadgets. It is designed to enable simple, constrained devices to join IoT through constrained networks having low bandwidth availability. This protocol is primarily used for machine-to-machine (M2M) communication and is particularly designed for IoT systems that are based on HTTP protocols.
+********
+Platform
+********
+
+The software platform of your IoT projects will be in charge of managing the devices (onboarding process, monitoring, etc.) and receiving and processing the messages. It also must provide APIs for reading the gathered data. Your IoT software platform must be flexible enough to support different communication protocols (MQTT, REST, XMPP, WebSockets, etc.). 
+
+Platforms are usually deployed in the cloud, but you should check if they can be deployed on-premises in case the project is big enough and investing in computing hardware is an option. In addition to basic functionalities, some platforms provide other interesting features like data mining, multitenancy and deriving data.
+
+************
+Applications
+************
+
+All IoT projects are carried out for a purpose. Maybe the goal is receiving an alarm when a laboratory room reaches a certain temperature or optimizing the water supply of a city. In other cases, IoT projects are used for reducing the power consumption of a building or predicting the maintenance of an industrial engine. IoT applications are just software systems which use the data that is received by the devices and the functionality that they provide. Depending on the level of customization, three categories can be defined:
+
+- IoT vertical applications, which provide out-of-the-box functionalities for a specific application domain like smart waste management, smart building monitoring, smart water metering, smart irrigation, etc.
+
+- Toolboxes and frameworks for building your own dashboards, reports, alarms, graphics, etc. These can be independent products which integrate with external data sources or they can be provided as a part of the IoT software platform.
+
+- Custom software applicationswhich are developed from the ground up using standard software development technologies. These applications will use the IoT software platform APIs as the foundation for building their functionality.
+
+**************
+Cloud platform
+**************
+
+When comparing platforms, most companies often want an IoT cloud platform that covers all the bases, while being flexible in the ways they can store and stream data. Truly, most companies want out-of-the-box support for opinionated behaviors AND the flexibility to change those defaults that makes it special. Ultimately, as a consumer, you’re looking for the best IoT cloud platform that lets you achieve the above based on your solution.
+
+Scalability 
+===========
+
+First and foremost, an IoT cloud platform has to support millions of simultaneous device connections and allow you to configure devices for machine-to-machine communication. Of course, every IoT cloud platform will claim they can handle millions of simultaneous device connections. You should look for an IoT cloud platform that has consistently high uptime and offers complete transparency on previous downtimes. Every platform should have some type of platform status page; use this to examine their uptime and how they have handled past incidents. It may also help to examine the types of customers they have helped and the amount of devices they have deployed with them. You should also look for a platform that manages the scaling cloud infrastructure for you. The best vendors will monitor the performance of your devices and help you scale when necessary.
+
+
+
+Device Management Features
+==========================
+
+When comparing IoT cloud platforms, you need to assess how well the vendor allows you to monitor, segment, and manage edge devices that are out in the field.  To extract the right data out of your devices, you need a device management system that can interface with microprocessors and local software on IoT devices. This is complicated to build because few companies have an IoT hardware, software, and connectivity ecosystem that can handle bidirectional communication streams and provide device management services that don’t interfere with this process. For companies who want to have complete control over their remote devices, these are some of the basic features you’ll need: 
+
+- Cloud API — The ability to organize devices, segment your fleet for more granular control, and monitor the health of your devices in real-time.
+
+- Developer Tools — A central interface or set of tools that allow you to manage and reprogram your IoT devices wirelessly. 
+
+- Device command and control — Cloud-based functions that allow you to control variables and events through their Rest API structure.
+
+- Event Logs —An interface that allows you to see what’s happening with devices in real time to improve the experience of finding data that is relevant to you.
+
+- Remote Diagnostics — Features that allow you to actively monitor device health vitals and take preemptive actions when warning signs appear.
+
+*****************************
+ Over-the-Air Firmware Updates
+*****************************
+
+Over-the-air (OTA) firmware updates are a vital component of any IoT cloud platform. OTA firmware refers to the practice of remotely updating the code on an embedded device. The value of incorporating OTA update capabilities into a connected product cannot be understated, and include - 
+Companies can test new features by sending updates to one or multiple devices. Companies can save costs by managing the firmware across their fleet of devices from a seamless, unified interface, developers can deploy frequently and reliably, knowing that products will stay functional as updates are released.
+OTA firmware augments scalability by adding new features and infrastructure to products after they are released.
+
+****************************
+Complete System Integrations
+****************************
+
+How does the IoT cloud vendor integrate all the complex stuff that you need for IoT — like cellular modems, carrier/sim cards, device diagnostics, firmware updates, cloud connections, security, application layer, and RTOS ? This will probably require a call to a sales representative to understand how these discrete components work together. Talk with your engineers and make sure these parts all work together in a way that works easily for them. Have them compare these integrations with other IoT cloud vendor platform
+
+******************
+ Data Management
+******************
+
+When it comes to storing, processing, and analyzing data, you need a system that is already built to handle it. The best IoT cloud platforms combine data sources from an entire fleet into a unified data flow that provides product-wide business intelligence. It is also imperative to choose a IoT cloud platform architecture that seamlessly integrates device data with your existing services. This allows you to reap all the benefits of getting to house your data where you want, without having to handle the complex building and maintenance aspects of hosting your own IoT cloud solution. For instance, many companies often want to send device data to their Sales force, Azure, or AWS environment. You should look for an IoT cloud platform that can handle these integrations and allow you to store your data where you want it.
+
+
 
 
 
