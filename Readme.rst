@@ -359,7 +359,7 @@ C is the most popular language to program microcontrollers. However C++ and Pyth
 Communication Technologies 
 ==========================
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/27.png
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/27.PNG
 
 Protocols and Communication Technologies are used in the Internet of Things. Some of the key IoT technologies and protocols (IoT Communication Protocols) are Bluetooth, Wifi, Radio Protocols, LTE-A and WiFi-Direct. These IoT communication protocols meet and complement the specific functional requirements of an IoT system.
 
@@ -450,14 +450,15 @@ Although the “i” in IoT stands for internet, you have different kinds of net
 
 Devices spread:
 ===============
- If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
+
+If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
  
  
  
 Required data rates:
 ====================
 
- Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
+Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
 
 Network coverage: 
 =================
