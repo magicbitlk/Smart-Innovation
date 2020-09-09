@@ -530,6 +530,7 @@ How does the IoT cloud vendor integrate all the complex stuff that you need for 
 ******************
  Data Management
 ******************
+
 When it comes to storing, processing, and analyzing data, you need a system that is already built to handle it. The best IoT cloud platforms combine data sources from an entire fleet into a unified data flow that provides product-wide business intelligence. It is also imperative to choose a IoT cloud platform architecture that seamlessly integrates device data with your existing services. This allows you to reap all the benefits of getting to house your data where you want, without having to handle the complex building and maintenance aspects of hosting your own IoT cloud solution. For instance, many companies often want to send device data to their Sales force, Azure, or AWS environment. You should look for an IoT cloud platform that can handle these integrations and allow you to store your data where you want it.
 
 
