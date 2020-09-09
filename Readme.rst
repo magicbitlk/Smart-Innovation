@@ -257,7 +257,192 @@ Single board computers are small and low end computers with low end processing p
 
 .. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/21.jpg 
 
+Why Edge computing devices is the future?
+=======================
 
+The data transmitted by sensors or devices directly to the cloud are highly dependent on the connectivity which is sometimes not reliable. The resources consumed even for a simple analysis in direct cloud accessed architecture is high which takes more time as well. This is whether the edge computing devices provides a major advantage. The edge computing devices are capable of processing and storing certain amounts of data and transmit to the cloud which saves power and valuable cloud resources together with time.
+Depending on the requirements with the increase of high performing computer hardware devices the edge computing will provide more promising future. 
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/222.jpg 
+
+===================================
+ Micro-controller based edge devices
+===================================
+
+In these systems, complex data analysis and decision making tasks are handled in the cloud back-end, while the device nodes perform data collection tasks or respond to remote control commands.
+Overall, this is a nice balance. Hardware is inexpensive to replace and can run on small batteries for multiple years, and heavy compute resources are provided by cloud services that are easy to scale up to meet demand as the number of edge devices increases.
+
+Let’s learn more about microcontrollers…
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/26.png
+
+**********************************
+Microprocessor vs Micro-controller
+**********************************
+
+Computer is comprised of a microprocessor. Basically microcontroller is a mini computer intended for limited task where a computer with microprocessor is intended to do many multiple tasks. There are some similarities and differences between Microprocessor and Microcontroller.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/23.png
+
+Microcontroller has all the features of a microprocessor with comparatively low performance. The microcontroller is a minicomputer with all the features of a computer.
+
+*************
+Block Diagram
+*************
+
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/24.jpg
+
+**********************
+System on a Chip (SoC)
+**********************
+
+
+System on a Chip or SoC will be the future of processors. With the advancement of the integrated circuit manufacturing, miniature computers on a single chip of silicon is arising. These will have more features, performance and smaller size with separate connectivity modules. SoCs are in contrast to the common traditional motherboard-based PC architecture, which separates components based on function and connects them through a central interfacing circuit board. A SoC integrates a microcontroller or microprocessor with advanced peripherals like graphics processing unit (GPU), Wi-Fi module, or one or more coprocessors. Similar to how a microcontroller integrates a microprocessor with peripheral circuits and memory, an SoC can be seen as integrating a microcontroller with even more advanced peripherals.
+SoC is increasingly becoming popular in mobile computing, embedded systems and IoT. 
+
+****************************
+Microcontroller Architecture
+****************************
+
+Microcontrollers incorporate memory, a CPU, peripherals and I/O interfaces into a single chip. The architecture of a device can be depicted as in below diagram.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/24.png
+
+*****************************
+Hardware ,Software & Firmware
+*****************************
+
+- Hardware - Hardware in ICT domain is referred to as the physical parts of a computer.
+
+- Software - Software is a set of instructions or programs instructing a computer to do specific tasks.
+
+- Firmware - Firmware is a specific class of computer software that provides the low-level control for a device's specific hardware.
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/26.jpg
+ 
+********************************
+Applications of Microcontrollers
+********************************
+
+The nature of microcontrollers has come inherent advantages to use in practical applications.
+
+- Suitable for specific applications
+- Programmable according to requirement
+- Application development is less time consuming
+- Can be prototyped using simulators and emulators
+- Easy to design and implantation
+
+This is why microcontroller are widely used in industries for many commercial products. At present most consumer products have certain parts designed with a microcontroller. Below are some of the popular implementations.
+
+- Wearable devices
+- Robotics
+- Automobile
+- Industrial automation
+- IoT applications
+
+The use in IoT applications are increasingly becoming popular based on the advantages of microcontroller.
+
+***************************
+Microcontroller Programming
+***************************
+
+A microcontroller does not have an instruction set to perform the operation out of the box. Therefore it needs to be programmed with instructions to perform a task. Therefore 3 tasks need to be done to program the microcontroller.
+
+- Write the code in a programming language
+- Compile the code to suit the microcontroller used
+- Upload the compiled version of program to computer
+
+C is the most popular language to program microcontrollers. However C++ and Python are also used commonly by users. 
+
+==========================
+Communication Technologies 
+==========================
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/27.png
+
+Protocols and Communication Technologies are used in the Internet of Things. Some of the key IoT technologies and protocols (IoT Communication Protocols) are Bluetooth, Wifi, Radio Protocols, LTE-A and WiFi-Direct. These IoT communication protocols meet and complement the specific functional requirements of an IoT system.
+
+*********
+Bluetooth
+*********
+
+Bluetooth is an important short-range IoT communication technology. Bluetooth has become very important in computing and many consumer product markets. It is expected to be a key for wearable products in particular, again connecting to the IoT albeit probably via a smartphone in many cases. The new Bluetooth Low-Energy (BLE) – or Bluetooth Smart, as it is now branded – is a significant protocol for IoT applications. Importantly, while it offers a similar range to Bluetooth it has been designed to offer significantly reduced power consumption.
+
+******
+Zigbee
+******
+
+ZigBee is similar to Bluetooth and is majorly used in industrial settings. It has some significant advantages in complex systems offering low-power operation, high security, robustness and high and is well positioned to take advantage of wireless control and sensor networks in IoT applications. The latest version of ZigBee is the recently launched 3.0, which is essentially the unification of the various ZigBee wireless standards into a single standard.
+
+*****
+ Wi-Fi
+*****
+
+WiFi connectivity is one of the most popular IoT communication protocol, often an obvious choice for many developers, especially given the availability of WiFi within the home environment within LANs. There is a wide existing infrastructure as well as offering fast data transfer and the ability to handle high quantities of data. Currently, the most common WiFi standard used in homes and many businesses is 802.11n, which offers range of hundreds of megabit per second, which is fine for file transfers but may be too power-consuming for many IoT applications.
+
+********
+Cellular
+********
+
+Any IoT application that requires operation over longer distances can take advantage of GSM/3G/4G cellular communication capabilities. While cellular is clearly capable of sending high quantities of data, especially for 4G, the cost and also power consumption will be too high for many applications. But it can be ideal for sensor-based low-bandwidth-data projects that will send very low amounts of data over the Internet.
+
+*******
+LoRaWAN
+*******
+
+LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applications. The LoRaWAN design to provide low-power WANs with features specifically needed to support low-cost mobile secure communication in IoT, smart city, and industrial applications. Specifically meets requirements for low-power consumption and supports large networks with millions and millions of devices, data rates range from 0.3 kbps to 50 kbps.
+
+
+=============
+IoT Protocols
+=============
+
+
+A protocol is a standard set of rules that allow electronic devices to communicate with each other. These rules include what type of data may be transmitted, what commands are used to send and receive data, and how data transfers are confirmed. You can think of a protocol as a spoken language.
+
+*************************************************
+
+Message Queue Telemetry Transport Protocol (MQTT)
+*************************************************
+
+MQTT (Message Queue Telemetry Transport) is a messaging protocol developed with the aid of Andy Stanford-Clark of IBM and Arlen Nipper of Arcom in 1999 and is designed for M2M communication. It’s normally used for faraway tracking in IoT. Its primary challenge is to gather statistics from many gadgets and delivery of its infrastructure. MQTT connects gadgets and networks with packages and middleware. All the devices hook up with facts concentrator servers like IBM’s new message sight appliance. MQTT protocols paintings on top of TCP to offer easy and dependable streams of information.
+ 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/28.jpg
+
+These IoT protocols include 3 foremost additives: subscriber, publisher, and dealer. The writer generates the information and transmits the facts to subscribers through the dealer. The dealer guarantees safety by means of move-checking the authorization of publishers and subscribers. 
+
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/29.png
+ 
+****
+HTTP
+****
+
+The good old HTTP is still commonly used even in IoT, especially on low cost micro controllers. It has many benefits like its text based (debug and message crafting is easy), many libraries and the most importantly it goes through firewalls. Its biggest disadvantage is that it’s not full duplex.  Server can’t talk to the devices (Polling is used to overcome this).
+
+***************************************
+Constrained Application Protocol (CoAP)
+***************************************
+
+CoAP is an internet utility protocol for constrained gadgets. It is designed to enable simple, constrained devices to join IoT through constrained networks having low bandwidth availability. This protocol is primarily used for machine-to-machine (M2M) communication and is particularly designed for IoT systems that are based on HTTP protocols.
+
+
+
+=================================================
+Internet of Things Solution design considerations
+
+=================================================
+
+Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
+
+*********************
+.
+Sensors and Devices
+*********************
+
+Devices and sensors are the “thing” part of your IoT projects. These and other devices interact with the physical environment. It is not only important that they accurately read the phenomenon your application needs (air temperature, power consumption, water flow, traffic density, etc.), but also, they have to be integrated with the overall system architecture too. When selecting the devices, you must check that they support the necessary networking protocols and that your system platform can decode the message formats they send.
+Device configuration is another important feature. Some devices provide configuration programs while others require internal reprogramming to change their behaviour. Finally, you must evaluate the power source the use (batteries, solar panels, AC, etc.) since it has a strong impact in the system maintenance.
+ 
 
 
 
