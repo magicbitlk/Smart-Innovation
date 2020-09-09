@@ -394,53 +394,6 @@ LoRaWAN
 LoRaWAN is one of popular IoT Technology, targets wide-area network (WAN) applications. The LoRaWAN design to provide low-power WANs with features specifically needed to support low-cost mobile secure communication in IoT, smart city, and industrial applications. Specifically meets requirements for low-power consumption and supports large networks with millions and millions of devices, data rates range from 0.3 kbps to 50 kbps.
 
 
-
-
-=================================================
-Internet of Things Solution design considerations
-
-=================================================
-
-Building complete and functional IoT projects can be a puzzle full of surprises if you are not aware of all the building pieces that must be taken into account. The IoT market offers a wide range of technologies, products and applications. All these options are confusing when you face the design and development of a specific IoT project with specific needs. Fortunately, all IoT projects share the same building blocks from an architectural point of view. If you have a clear understanding of these building blocks, it will be easier for you to design a successful IoT system.
-
-*********************
-.
-Sensors and Devices
-*********************
-
-Devices and sensors are the “thing” part of your IoT projects. These and other devices interact with the physical environment. It is not only important that they accurately read the phenomenon your application needs (air temperature, power consumption, water flow, traffic density, etc.), but also, they have to be integrated with the overall system architecture too. When selecting the devices, you must check that they support the necessary networking protocols and that your system platform can decode the message formats they send.
-Device configuration is another important feature. Some devices provide configuration programs while others require internal reprogramming to change their behaviour. Finally, you must evaluate the power source the use (batteries, solar panels, AC, etc.) since it has a strong impact in the system maintenance.
- 
-
-**************
-Communications
-**************
-
-Although the “i” in IoT stands for internet, you have different kinds of networks available for communications among devices and with the platform. Choosing the right networking technology depends on the characteristics and requirements of the project. It is common to use more than one technology in an IoT project. The main factors to take into account when choosing a networking technology for your IoT projects are:
-
-Devices spread:
-===============
- If devices are located in the same area like a building, an industrial plant or even a neighbourhood, short-range technologies like Wi-Fi, ZigBee would be a good choice. Otherwise, If devices are widespread in a city or country, long-range technologies like NB-IOT/ LoRa or Sigfox can be the right choice. 
- 
- 
- 
-Required data rates:
-====================
-
- Some networking protocols are not suitable depending on the amount of data that the devices send. For instance, NB-IOT and LoRa do not provide enough bandwidth when a sensor must send the temperature of a room or the state of a parking lot every minute.
-
-Network coverage: 
-=================
-You can deploy your own network for the LoRa project including the use of third-party LoRa networks (TTN) or use an available network provided by third parties (2G, NB-IoT, etc.).
-
-********
-Platform
-********
-
-The software platform of your IoT projects will be in charge of managing the devices (onboarding process, monitoring, etc.) and receiving and processing the messages. It also must provide APIs for reading the gathered data. Your IoT software platform must be flexible enough to support different communication protocols (MQTT, REST, XMPP, WebSockets, etc.). 
-
-Platforms are usually deployed in the cloud, but you should check if they can be deployed on-premises in case the project is big enough and investing in computing hardware is an option. In addition to basic functionalities, some platforms provide other interesting features like data mining, multitenancy and deriving data.
-
 ************
 Applications
 ************
