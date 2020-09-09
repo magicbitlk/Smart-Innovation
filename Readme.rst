@@ -129,7 +129,7 @@ Cloud
 
 Cloud is the application and presentation layer of the IoT architecture. The servers and computes processing the data are referred to as the cloud platform here. IoT data storing, processing and presentation part happens here. For example a dashboard is a web based representation of a data set collected through many or single IoT node. Below is a screenshot of an implementation of a dashboard done with ThingsBoard platform.
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/11.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/11.png
 
 ========
 Security
@@ -141,7 +141,7 @@ The security measures have to be implemented in each of the layers of IoT starti
  
 IoT Security Foundation was launched in 2015 to ensure the future of the security aspects of IoT. The rapid growth of IoT will demand for better secured platforms and channels for security of data as well.
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/12.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/12.png
 
 	
 ============================
@@ -189,7 +189,7 @@ Dashboards are the representation of processed data. The visualization of the da
 This could be a online dash board or hosted in a single location. However most IoT related dashboards are accessible over the internet with multiple devices such as computers, Tabs or mobiles.
 Below is a sample picture of a weather station dashboard.
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/13.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/13.png
 
 ********************************************************
 Popular Cloud Platforms 
@@ -202,30 +202,30 @@ Azure IoT
 
 Azure IoT is the tech giant Microsoft’s IoT platform. This has predefined App templates tailored for end user business needs. They have some prebuilt applications for different business verticals. Azure also claims to be a scalable, reliable and trusted IoT cloud used by many multinational corporations. 
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/14.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/14.png
  
 AWS IoT
 =======
 
 Being one of the leading cloud service providers AWS IoT platform with more added features such as security, multiple supported other services and superior AI integration. 
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/15.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/15.png
  
 ThingsBoard
 ===========
 
 ThingsBoard is an open source IoT platform which supports both cloud and on-premise deployments. The platform has some powerful features of data collection, processing, visualization and device management. This platforms enable connectivity through standard protocols such as HTTP, MQTT and CoAP.
   
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/16.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/16.png
 
 Google Cloud IoT
 ================
 
 Google Cloud IoT is the IoT cloud version from google which is supports the IoT architecture as below.
  
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/17.jpg
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/17.png
 
-.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/18.jpg 
+.. image:: https://github.com/magicbitlk/Smart-Innovation/raw/master/Images/18.png
 
 
 
